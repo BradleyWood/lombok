@@ -160,7 +160,14 @@ public class ConfigurationKeys {
 	 * If set, <em>any</em> usage of {@code @Getter} results in a warning / error.
 	 */
 	public static final ConfigurationKey<FlagUsageType> GETTER_FLAG_USAGE = new ConfigurationKey<FlagUsageType>("lombok.getter.flagUsage", "Emit a warning or error if @Getter is used.") {};
-	
+
+	/**
+	 * lombok configuration: {@code lombok.streamable.flagUsage} = {@code WARNING} | {@code ERROR}.
+	 *
+	 * If set, <em>any</em> usage of {@code @Streamable} results in a warning / error.
+	 */
+	public static final ConfigurationKey<FlagUsageType> STREAMABLE_FLAG_USAGE = new ConfigurationKey<FlagUsageType>("lombok.streamable.flagUsage", "Emit a warning or error if @Streamable is used.") {};
+
 	/**
 	 * lombok configuration: {@code lombok.getter.lazy.flagUsage} = {@code WARNING} | {@code ERROR}.
 	 * 
